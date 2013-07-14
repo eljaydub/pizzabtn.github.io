@@ -15,59 +15,59 @@ body {
     right: 0;
     bottom: 0;
 }
-    .pizza__background {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
+.pizza__background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 
-    .pizza__steam-top {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
+.pizza__steam-top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
 
-        -webkit-animation-name: steam-top;
-        -webkit-animation-duration: 5s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: easy-out;
-    }
+    -webkit-animation-name: steam-top;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: easy-out;
+}
 
-    .pizza__steam-bottom {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 50%;
-        bottom: 0;
-        opacity: 0;
+.pizza__steam-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    opacity: 0;
 
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
 
-        -webkit-animation-name: steam-bottom;
-        -webkit-animation-duration: 5s;
-        -webkit-animation-delay: 2.5s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: easy-out;
+    -webkit-animation-name: steam-bottom;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: easy-out;
 
-        animation-name: steam-bottom;
-        animation-duration: 5s;
-        animation-delay: 2.5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: easy-out;
-    }
+    animation-name: steam-bottom;
+    animation-duration: 5s;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: easy-out;
+}
 
 
 @-webkit-keyframes steam-top {
@@ -186,7 +186,7 @@ body {
     background-size: auto 100%;
 
     -webkit-transition: all .3s ease;
-            transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -212,15 +212,15 @@ body {
     line-height: 45px;
     vertical-align: middle;
 }
-    .icon-list__item {
-        display: inline-block;
-        vertical-align: top;
-        margin: 0 0 0 13px;
-    }
+.icon-list__item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 13px;
+}
 
-    .icon-list__item:first-child {
-        margin-left: 0;
-    }
+.icon-list__item:first-child {
+    margin-left: 0;
+}
 
 
 /* button */
@@ -260,14 +260,14 @@ body {
     display: inline-block;
     overflow: hidden;
 }
-    .social__title {
-        display: inline-block;
-    }
+.social__title {
+    display: inline-block;
+}
 
-    .social__buttons {
-        display: inline-block;
-        margin: 0 0 0 16px;
-    }
+.social__buttons {
+    display: inline-block;
+    margin: 0 0 0 16px;
+}
 
 
 /* copyright */
@@ -298,12 +298,12 @@ body {
         height: 79px;
     }
 }
-    .footer__item {
-        height: 79px;
-        line-height: 79px;
-        vertical-align: middle;
-        text-align: center;
-    }
+.footer__item {
+    height: 79px;
+    line-height: 79px;
+    vertical-align: middle;
+    text-align: center;
+}
 
 @media screen and (min-width: 600px) {
 
@@ -371,9 +371,9 @@ body {
     min-height: 100%;
     z-index: 100;
 }
-    .page__inner {
-        padding: 0 0 472px;
-    }
+.page__inner {
+    padding: 0 0 472px;
+}
 
 
 .bottom
