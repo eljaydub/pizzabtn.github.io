@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>Cawabanga!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
 
@@ -17,53 +17,81 @@
 
         <div class="page">
             <div class="page__inner">
-                <div class="content">
-                    <div class="content__logo">
-                        <a class="logo" href="#"></a>
-                    </div>
-                    <div class="content__slider">
-                        <div class="slider">
-
+                <div class="page__inner__logo">
+                    <a class="logo" href="#"></a>
+                </div>
+                <div class="page__inner__slider">
+                    <div class="slider">
+                        <div class="slider__item slider__item_current">
+                            <div class="slider__item__inner">
+                                <div class="iphone5-frame">
+                                    <div class="video video_vertical">
+                                        <iframe src="//www.youtube.com/embed/KKaLJENehfs?controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item__inner">
+                                <div class="video" style="margin-top: 20%;">
+                                    <iframe src="http://player.vimeo.com/video/69647216" autoplay="1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div><!--/page inner -->
+        </div><!--/page -->
+
+
+
+
 
         <div class="bottom">
-
-            <div class="ribbon"></div>
-
-            <footer class="footer">
-                <div class="footer__item footer__item_center">
-                    <a class="button button_large" href="#">Join now</a>
+            <div class="bottom__ribbon">
+                <div class="ribbon">
+                    <div class="ribbon__title">SDK to sell pizza inside your apps</div>
+                    <div class="ribbon__additional">Up to 10% from every order</div>
                 </div>
-                <div class="footer__item footer__item_right">
-                    <div class="social">
-                        <div class="social__title">
-                            Follow us:
-                        </div><!--
-                    --><div class="social__buttons">
+            </div>
+            <div class="bottom__footer">
+
+                <footer class="footer">
+                    <div class="footer__button">
+                        <a class="button" href="#">Join</a>
+                    </div>
+                    <div class="footer__follow">
+                        <div class="social">
+                            <div class="social__title">
+                                Follow us:
+                            </div><!--
+                     --><div class="social__buttons">
                             <ul class="icon-list">
                                 <li class="icon-list__item">
                                     <a class="rounded rounded_facebook" href="#"></a>
                                 </li><!--
                              --><li class="icon-list__item">
-                                    <a class="rounded rounded_twitter" href="#"></a>
-                                </li><!--
-                             --><li class="icon-list__item">
-                                    <a class="rounded rounded_youtube" href="#"></a>
-                                </li>
+                                <a class="rounded rounded_github" href="#"></a>
+                            </li>
                             </ul>
                         </div>
+                        </div>
                     </div>
-                </div>
-                <div class="footer__item footer__item_left">
-                    <div class="copyright">Made by Hintsolutions. All rights reserved.</div>
-                </div>
-            </footer>
+                    <div class="footer__copyright">
+                        <a href="#" class="copyright">&copy; Pizzabtn</a>
+                    </div>
+                </footer>
+            </div>
 
         </div>
+
+
+        <!-- Scripts -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.3.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+        <!--/Scripts -->
+
 
     </body>
 </html>
