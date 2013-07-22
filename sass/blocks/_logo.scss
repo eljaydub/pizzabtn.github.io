@@ -1,0 +1,30 @@
+.logo {
+    display: block;
+    padding: 0 0 28.75%;
+    background-image: url(../images/logo_320.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+
+    @include respond-to(400px, 600px) {
+        background-image: url(../images/logo_480.png);
+    }
+    @include respond-to(600px, 800px) {
+        padding-bottom: 17.5%;
+        background-image: url(../images/logo_800.png);
+    }
+    @include respond-to(800px, 1400px) {
+        padding: 0;
+        width: 800px;
+        height: 140px;
+        margin: 0 auto;
+        background-image: url(../images/logo_800.png);
+    }
+    @include respond-to(1400px) {
+        padding: 0;
+        width: 1040px;
+        height: 208px;
+        margin: 0 auto;
+        background-image: url(../images/logo_1040.png);
+    }
+}

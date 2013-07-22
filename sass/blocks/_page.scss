@@ -1,0 +1,33 @@
+.page {
+    position: relative;
+    overflow: hidden;
+    @include respond-to(1000px) { min-height: 100%; }
+}
+
+    .page__inner {
+        position: relative;
+        @include respond-to(1000px) { padding-bottom: 110px; } //footer goes bottom
+        @include respond-to(1400px) { padding-bottom: 126px; } //footer goes bottom
+    }
+
+        .page__inner__logo {
+            padding: 10px 0 0;
+            @include respond-to(600px, 800px)  { padding-top: 20px; }
+            @include respond-to(800px, 1400px) { padding-top: 30px; }
+            @include respond-to(1400px)        { padding-top: 40px; }
+        }
+
+
+        .page__inner__video {
+            margin: 20px 5px;
+            z-index: 100;
+            position: relative;
+        }
+
+        @media screen and (min-width: 800px) {
+            .page__inner__video {
+                margin-left: auto;
+                margin-right: auto;
+                width: 790px;
+            }
+        }

@@ -1,0 +1,99 @@
+.footer {
+    position: relative;
+    height: 186px;
+    padding: 73px 0 0; //cause ribbon
+    background: #fff;
+
+    @include respond-to(1000px) {
+        padding: 0;
+        margin-top: -110px; //footer goes bottom of the page and ribbon have no space for now (goes to background)
+        @include box-shadow( 0 -8px 13px 0 rgba(8,5,4, .28) );
+    }
+    @include respond-to(1400px) {
+        margin-top: -126px;
+    }
+}
+
+    .footer__ribbon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        @include respond-to(1000px) {
+            top: auto;
+            bottom: 100%;
+        }
+    }
+
+    .footer__inner {
+        position: relative;
+    }
+        .footer__inner__button {
+            position: absolute;
+            left: 28px;
+            right: 28px;
+            top: 22px
+        }
+
+        .footer__inner__follow {
+            position: absolute;
+            left: 20px;
+            top: 125px;
+        }
+
+        .footer__inner__copyright {
+            position: absolute;
+            right: 28px;
+            top: 133px;
+        }
+
+
+@media screen and (min-width: 600px) {
+
+    .footer {
+        height: 110px;
+    }
+        .footer__inner__button {
+            left: 180px;
+            right: 180px;
+        }
+
+        .footer__inner__follow {
+            top: 29px;
+        }
+
+        .footer__inner__copyright {
+            top: 37px;
+        }
+
+}
+
+@media screen and (min-width: 800px) {
+    .footer__inner__button {
+        width: 370px;
+        position: absolute;
+        left: 50%;
+        margin: 0 0 0 -185px;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+
+    .footer {
+        height: 126px;
+        margin-top: -126px;
+    }
+        .footer__inner__button {
+            top: 24px;
+        }
+
+        .footer__inner__follow {
+            top: 34px;
+        }
+
+        .footer__inner__copyright {
+            top: 49px;
+        }
+
+}
