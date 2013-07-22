@@ -8,6 +8,10 @@ body {
     position: relative;
 }
 
+a {
+    outline: none;
+}
+
 .pizza {
     position: fixed;
     left: 0;
@@ -153,9 +157,6 @@ body {
     height: 0;
     padding: 0 0 56.25%; /*16:9 is default*/
 }
-    .video_vertical {
-        padding-bottom: 177.778%; /* 9:16 for iphone 5 */
-    }
 
     .video iframe {
         position: absolute;
@@ -227,9 +228,6 @@ body {
     background-image: url(../images/icon_45px.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
-
-    -webkit-transition: background .3s ease;
-            transition: background .3s ease;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -425,7 +423,7 @@ body {
     height: 73px;
     background: #6c6e71;
     box-shadow: 0 1px 6px 0 rgba(8,5,4, .73);
-    z-index: 100;
+    /*z-index: 100;*/
 
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 24px;
@@ -451,7 +449,7 @@ body {
         position: absolute;
         right: -130px;
         bottom: 170px;
-        z-index: 0;
+        /*z-index: 0;*/
         -webkit-transform: rotate(-35deg) translate(0);
     }
 
@@ -554,12 +552,10 @@ body {
     }
 
 
-.iphone5-frame {
-    display: inline-block;
-    width: 224px;
-    height: 396px;
-    padding: 87px 38px 84px;
-    background: url(../images/iphone5.png) no-repeat;
+.inner-slider {
+    width: 100%;
+    height: 0;
+    padding: ;
 }
 
 .page {
@@ -570,8 +566,24 @@ body {
     .page__inner {
         position: relative;
         padding: 0 0 259px;
-        z-index: 1000;
+        /*z-index: 1000;*/
     }
+
+        .page__inner__video {
+            margin: 20px 5px;
+            z-index: 100;
+            position: relative;
+        }
+
+
+        @media screen and (min-width: 800px) {
+            .page__inner__video {
+                margin-left: auto;
+                margin-right: auto;
+                width: 790px;
+            }
+        }
+
 
         @media screen and (min-width: 600px) and (max-width: 999px) {
             .page__inner { padding-bottom: 183px; }
@@ -606,7 +618,7 @@ body {
 .bottom
 {
     position: relative;
-    z-index: 100;
+    /*z-index: 100;*/
     height: 259px;
     margin: -259px 0 0;
 }
@@ -614,7 +626,7 @@ body {
         @media screen and (min-width: 1000px) {
             .bottom__ribbon {
                 position: absolute;
-                z-index: 0;
+                /*z-index: 0;*/
                 left: 0;
                 bottom: 0;
                 width: 100%;
@@ -625,7 +637,7 @@ body {
 
     .bottom__footer {
         position: relative;
-        z-index: 2000;
+        /*z-index: 2000;*/
     }
 
 @media screen and (min-width: 600px) and (max-width: 999px) {

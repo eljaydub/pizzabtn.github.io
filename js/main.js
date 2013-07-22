@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     }
 
-    var slider = setInterval(slideChange, 5000);
+    var slider = setInterval(slideChange, 215000);
 
 
 
