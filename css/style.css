@@ -1132,6 +1132,7 @@ ul {
 }
 
 .page__inner__slider {
+  position: relative;
   z-index: 100;
   margin: 0 0 20px;
   padding: 0 1%;
