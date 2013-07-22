@@ -16,7 +16,23 @@
             @include respond-to(800px, 1400px) { padding-top: 30px; }
             @include respond-to(1400px)        { padding-top: 40px; }
         }
-
+        .page__inner__slider {
+            z-index: 100; //to overlay ribbon or something
+            margin: 0 0 20px;
+            padding: 0 1%;
+            @include respond-to(600px) {
+                margin: 20px 0 30px;
+                padding: 0 12%;
+            }
+            @include respond-to(800px) {
+                padding: 0;
+                width: 610px;
+                margin: 20px auto 40px;
+            }
+            @include respond-to(1400px) {
+                width: 792px;
+            }
+        }
 
         .page__inner__video {
             margin: 20px 5px;
