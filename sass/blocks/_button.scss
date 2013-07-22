@@ -1,0 +1,48 @@
+$button-heigh: 68px;
+$button-heigh__small: 60px;
+$button-heigh__large: 76px;
+
+.button {
+    display: block;
+    overflow: hidden;
+    height: $button-heigh - 4px;
+    line-height: $button-heigh - 4px;
+    border: 2px solid #485d23;
+    @include border-radius($button-heigh / 2);
+    background: #94bc4f;
+    @include background(linear-gradient(#d3e37d, #5a9723) );
+    @include box-shadow(
+        inset 0  3px 0 0 rgba(255, 255, 255, 0.38),
+        inset 0 -1px 0 0 #507823,
+              0 -1px 0 0 #e7e9e2);
+    font-size: round( $button-heigh * 0.6 );
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #edf3e2;
+
+    &:hover {
+        background: #94bc4f;
+    }
+
+    @include respond-to(600px, 1400px) {
+        height: $button-heigh__small - 4px;
+        line-height: $button-heigh__small - 4px;
+        @include border-radius( $button-heigh__small / 2 );
+        @include box-shadow(
+            inset 0  1px 0 0 rgba(255, 255, 255, 0.38),
+            inset 0 -1px 0 0 #507823,
+                  0 -1px 0 0 #e7e9e2);
+        font-size: round( $button-heigh__small * 0.6 );
+    }
+
+    @include respond-to(1400px) {
+        height: $button-heigh__large - 4px;
+        line-height: $button-heigh__large - 4px;
+        @include border-radius($button-heigh__large / 2);
+        font-size: round( $button-heigh__large * 0.6 );
+    }
+
+
+}

@@ -1,0 +1,135 @@
+.pizza {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+    .pizza__background {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .pizza__steam-top {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+
+        -webkit-animation-name: steam-top;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: easy-out;
+    }
+
+    .pizza__steam-bottom {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        bottom: 0;
+        opacity: 0;
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+
+        -webkit-animation-name: steam-bottom;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-delay: 2.5s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: easy-out;
+
+        animation-name: steam-bottom;
+        animation-duration: 5s;
+        animation-delay: 2.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: easy-out;
+    }
+
+
+@-webkit-keyframes steam-top {
+    0%   { opacity: 0; bottom: 0; }
+    20%  { opacity: 1; }
+    60%  { opacity: 1; }
+    100% { opacity: 0; bottom: 35%; }
+}
+
+@keyframes steam-top {
+    0%   { opacity: 0; bottom: 0; }
+    20%  { opacity: 1; }
+    60%  { opacity: 1; }
+    100% { opacity: 0; bottom: 35%; }
+}
+
+@-webkit-keyframes steam-bottom {
+    0%   { top: 50%; opacity: 0; }
+    20%  { opacity: 1; }
+    60%  { opacity: 1; }
+    100% { opacity: 0; top: 0; }
+}
+
+@keyframes steam-bottom {
+    0%   { top: 50%; opacity: 0; }
+    20%  { opacity: 1; }
+    60%  { opacity: 1; }
+    100% { opacity: 0; top: 0; }
+}
+
+/* regular aspect ratio for 5:4 or 4:3 displays */
+/* this is an interval between portrait and landscape */
+/* also this is a version for devices who can't work with media queries */
+
+.pizza__background { z-index: -100; background-image: url(../images/pizza_square_small.jpg); }
+.pizza__steam-top { background-image: url(../images/pizza_square_small__steam-top.png); }
+.pizza__steam-bottom { background-image: url(../images/pizza_square_small__steam-bottom.png); }
+
+@media screen and (min-width: 1200px) {
+    .pizza__background { background-image: url(../images/pizza_square_large.jpg); }
+    .pizza__steam-top { background-image: url(../images/pizza_square_large__steam-top.png); }
+    .pizza__steam-bottom { background-image: url(../images/pizza_square_large__steam-bottom.png); }
+}
+
+
+
+
+/* portrait aspect ratio for smart phones */
+@media screen and (max-aspect-ratio: 1/1) and (max-width: 600px) {
+    .pizza__background { background-image: url(../images/pizza_portrait_small.jpg); }
+    .pizza__steam-top { background-image: url(../images/pizza_portrait_small__steam-top.png); }
+    .pizza__steam-bottom { background-image: url(../images/pizza_portrait_small__steam-bottom.png); }
+}
+
+@media screen and (max-aspect-ratio: 1/1) and (min-width: 601px) {
+    .pizza__background { background-image: url(../images/pizza_portrait_large.jpg); }
+    .pizza__steam-top { background-image: url(../images/pizza_portrait_large__steam-top.png); }
+    .pizza__steam-bottom { background-image: url(../images/pizza_portrait_large__steam-bottom.png); }
+}
+
+
+
+/* landscape aspect ratio for smart phones */
+@media screen and (min-aspect-ratio: 3/2) and (max-width: 1700px) {
+    .pizza__background { background-image: url(../images/pizza_landscape_small.jpg); }
+    .pizza__steam-top { background-image: url(../images/pizza_landscape_small__steam-top.png); }
+    .pizza__steam-bottom { background-image: url(../images/pizza_landscape_small__steam-bottom.png); }
+}
+
+@media screen and (min-aspect-ratio: 3/2) and (min-width: 1771px) {
+    .pizza__background { background-image: url(../images/pizza_landscape_large.jpg); }
+    .pizza__steam-top { background-image: url(../images/pizza_landscape_large__steam-top.png); }
+    .pizza__steam-bottom { background-image: url(../images/pizza_landscape_large__steam-bottom.png); }
+}

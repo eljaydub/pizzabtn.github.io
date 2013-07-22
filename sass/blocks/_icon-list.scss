@@ -1,0 +1,11 @@
+.icon-list {
+    display: inline-block;
+    vertical-align: middle;
+}
+    .icon-list__item {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 10px;
+        &:first-child { margin-left: 0 }
+    }
+

@@ -1,0 +1,15 @@
+.social {
+    display: inline-block;
+    overflow: hidden;
+}
+    .social__title {
+        display: inline-block;
+        font-size: 20px;
+        @include respond-to(600px, 800px) { display: none; }
+        @include respond-to(1400px) { font-size: 24px; }
+    }
+
+    .social__buttons {
+        display: inline-block;
+        margin: 0 0 0 13px;
+    }

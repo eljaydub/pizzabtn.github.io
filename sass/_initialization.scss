@@ -1,6 +1,6 @@
 $base-family:     $f-PT-Sans;
 $base-color:      #949191;
-$link-color:      #949191;
+$link-color:      #9fc2d7;
 $base-fontsize:   16px;
 $base-lineheight: 1.25; /*20px*/
 
@@ -17,7 +17,12 @@ textarea {
     color: $base-color;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     font: #{$base-fontsize} / #{$base-lineheight} $base-family;
 }
 
@@ -41,4 +46,11 @@ a {
 img {
     vertical-align: middle;
     max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-image: none;
+    list-style: none;
 }
