@@ -1,0 +1,44 @@
+$base-family:     $f-PT-Sans;
+$base-color:      #949191;
+$link-color:      #949191;
+$base-fontsize:   16px;
+$base-lineheight: 1.25; /*20px*/
+
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: $base-color;
+}
+
+body {
+    font: #{$base-fontsize} / #{$base-lineheight} $base-family;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+a {
+    color: $link-color;
+    &:hover { text-decoration: none; }
+}
+
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
