@@ -1,0 +1,24 @@
+.slide-profit {
+    position: relative;
+    height: 420px;
+}
+    .slide-profit__screenshot {
+        position: absolute;
+        left: -3px;
+        top: 34px;
+    }
+
+    .slide-profit__line {
+        position: absolute;
+        left: 165px;
+        top: -82px;
+        width: 367px;
+        height: 223px;
+        background: url($img-path+'line_bottom.png') no-repeat center center;
+    }
+
+    .slide-profit__text {
+        position: absolute;
+        left: 323px;
+        top: 156px;
+    }

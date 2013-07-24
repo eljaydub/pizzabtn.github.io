@@ -4,7 +4,14 @@
     height: 0;
     padding: 0 0 56.25%; /*16:9 is default*/
 }
-    .video iframe {
+
+.video_bordered {
+    border: 2px solid #c2c1c1;
+    @include border-radius(2px);
+    @include box-sizing(border-box);
+
+}
+    .video__frame {
         position: absolute;
         left: 0;
         top: 0;

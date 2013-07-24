@@ -1,15 +1,11 @@
 .iphone {
-    position: relative;
-    background: url($img-path+'iphone.png?5') no-repeat center center;
-    @include background-size(100% auto);
-    width: 100%;
-    height: 0;
-    padding: 0 0 200%;
-}
-    .iphone__inner {
-        position: absolute;
-        left:   11.352657004831%;
-        right:  11.352657004831%;
-        top:    16.225961538462%;
-        bottom: 15.504807692308%;
+    width: 139px;
+    height: 246px;
+    padding: 52px 15px;
+    background: url($img-path+'iphone.png?1') no-repeat center center;
+
+    @include respond-to(retina) {
+        background-image: url($img-path+'iphone@2x.png?1');
+        @include background-size(cover);
     }
+}

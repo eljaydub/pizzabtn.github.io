@@ -1,14 +1,20 @@
-@import 'blocks/pizza';
-@import 'blocks/video';
+@import 'blocks/icon';
 @import 'blocks/button';
-@import 'blocks/rounded';
-@import 'blocks/icon-list';
-@import 'blocks/social';
-@import 'blocks/copyright';
+@import 'blocks/video';
+@import 'blocks/text';
 @import 'blocks/logo';
+@import 'blocks/screen-shot';
 @import 'blocks/iphone';
-@import 'blocks/slideshow';
-@import 'blocks/slider';
 @import 'blocks/ribbon';
+@import 'blocks/copyright';
 @import 'blocks/footer';
+
+@import 'blocks/slide-pizza';
+@import 'blocks/slide-video';
+@import 'blocks/slide-setup';
+@import 'blocks/slide-push';
+@import 'blocks/slide-profit';
+
+
+@import 'blocks/region';
 @import 'blocks/page';

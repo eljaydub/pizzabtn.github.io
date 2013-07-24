@@ -1,0 +1,17 @@
+.slide-pizza {
+    position: relative;
+    height: 420px;
+}
+    .slide-pizza__logo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30px;
+    }
+
+    .slide-pizza__ribbon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }

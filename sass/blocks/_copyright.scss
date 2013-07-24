@@ -1,7 +1,8 @@
 .copyright {
     display: inline-block;
-    font-size: 20px;
     text-decoration: none;
-    &:hover .copyright__text { text-decoration: underline; }
-    @include respond-to(1400px){ font-size: 24px; }
+    &:hover .copyright__text { text-decoration: none; }
 }
+    .copyright__text {
+        text-decoration: underline;
+    }

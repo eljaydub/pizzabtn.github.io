@@ -1,29 +1,17 @@
 $base-family:     $f-PT-Sans;
-$base-color:      #949191;
-$link-color:      #9fc2d7;
-$base-fontsize:   16px;
-$base-lineheight: 1.25; /*20px*/
+$base-color:      #736b6b;
+$link-color:      #388eb6;
+$base-fontsize:   22px;
+$base-lineheight: 1.22727272727273; /*27px*/
 
 
 /* ==========================================================================
    Base styles
    ========================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
-    color: $base-color;
-}
-
-html {
-    height: 100%;
-}
-
 body {
-    height: 100%;
     font: #{$base-fontsize} / #{$base-lineheight} $base-family;
+    color: $base-color;
 }
 
 
@@ -37,6 +25,7 @@ body {
     text-shadow: none;
 }
 
+
 a {
     color: $link-color;
     &:hover { text-decoration: none; }
@@ -48,9 +37,8 @@ img {
     max-width: 100%;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-image: none;
-    list-style: none;
+textarea {
+    resize: vertical;
 }
+
+

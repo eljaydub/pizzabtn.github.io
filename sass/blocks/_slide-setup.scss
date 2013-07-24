@@ -1,0 +1,24 @@
+.slide-setup {
+    position: relative;
+    height: 420px;
+}
+    .slide-setup__screenshot {
+        position: absolute;
+        left: -3px;
+        top: 34px;
+    }
+
+    .slide-setup__line {
+        position: absolute;
+        left: 165px;
+        top: 225px;
+        width: 367px;
+        height: 223px;
+        background: url($img-path+'line_top.png') no-repeat center center;
+    }
+
+    .slide-setup__text {
+        position: absolute;
+        left: 323px;
+        bottom: 218px;
+    }

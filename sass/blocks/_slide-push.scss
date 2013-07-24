@@ -1,15 +1,15 @@
-.footer {
+.slide-push {
     position: relative;
-    height: 94px;
+    height: 420px;
 }
-    .footer__copyright {
+    .slide-push__screenshot {
         position: absolute;
-        top: 40px;
         right: 0;
+        top: 26px;
     }
 
-    .footer__social {
+    .slide-push__text {
         position: absolute;
         left: 0;
-        top: 30px;
+        top: 120px;
     }

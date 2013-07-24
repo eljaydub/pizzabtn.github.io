@@ -1,0 +1,12 @@
+$screen-shot-width: 139px;
+$screen-shot-height: 246px;
+
+.screen-shot {
+    width: $screen-shot-width;
+    height: $screen-shot-height;
+    background: url($img-path+'screenshot.jpg') no-repeat;
+}
+
+.screen-shot_setup-button { background-position: #{-($screen-shot-width*0)} #{-($screen-shot-height*0)}; }
+.screen-shot_push-button  { background-position: #{-($screen-shot-width*1)} #{-($screen-shot-height*0)}; }
+.screen-shot_profit       { background-position: #{-($screen-shot-width*2)} #{-($screen-shot-height*0)}; }

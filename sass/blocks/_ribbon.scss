@@ -1,18 +1,9 @@
 .ribbon {
-    position: relative;
-    height: 73px;
-    background: #6c6e71 url($img-path+'ribbon_horizontal.jpg') no-repeat center center;
-    @include box-shadow(0 1px 6px 0 rgba(8,5,4, .73));
-
-    @include respond-to(1000px, 1600px) {
-        height: 235px;
-        background: url($img-path+'ribbon_angle.png') no-repeat right bottom;
-        @include box-shadow(none);
-    }
-
-    @include respond-to(1600px) {
-        height: 270px;
-        background: url($img-path+'ribbon_angle_large.png') no-repeat right bottom;
-        @include box-shadow(none);
-    }
+    height: 60px;
+    line-height: 60px;
+    background: #a4c65a;
+    border-top: 1px solid #9fbc56;
+    @include box-shadow(0 -4px 7px 0 rgba(8,5,4, .28));
+    text-align: center;
+    color: #fff;
 }

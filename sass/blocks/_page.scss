@@ -1,50 +1,15 @@
 .page {
-    position: relative;
-    overflow: hidden;
-    @include respond-to(1000px) { min-height: 100%; }
-}
 
-    .page__inner {
-        position: relative;
-        @include respond-to(1000px) { padding-bottom: 110px; } //footer goes bottom
-        @include respond-to(1400px) { padding-bottom: 126px; } //footer goes bottom
+}
+    .page__slide {
+        background: url($img-path+'slide__background.png') repeat-x center top;
     }
 
-        .page__inner__logo {
-            padding: 10px 0 0;
-            @include respond-to(600px, 800px)  { padding-top: 20px; }
-            @include respond-to(800px, 1400px) { padding-top: 30px; }
-            @include respond-to(1400px)        { padding-top: 40px; }
-        }
-        .page__inner__slider {
-            position: relative;
-            z-index: 100; //to overlay ribbon or something
-            margin: 0 0 20px;
-            padding: 0 1%;
-            @include respond-to(600px) {
-                margin: 20px 0 30px;
-                padding: 0 12%;
-            }
-            @include respond-to(800px) {
-                padding: 0;
-                width: 610px;
-                margin: 20px auto 40px;
-            }
-            @include respond-to(1400px) {
-                width: 792px;
-            }
-        }
+    .page__slide_pizza {
+        background: url($img-path+'slide__pizza.jpg') no-repeat center top;
+    }
 
-        .page__inner__video {
-            margin: 20px 5px;
-            z-index: 100;
-            position: relative;
-        }
-
-        @media screen and (min-width: 800px) {
-            .page__inner__video {
-                margin-left: auto;
-                margin-right: auto;
-                width: 790px;
-            }
-        }
+    .page__footer {
+        background: #fff;
+        @include box-shadow(0 -4px 7px 0 rgba(8,5,4, .28));
+    }
