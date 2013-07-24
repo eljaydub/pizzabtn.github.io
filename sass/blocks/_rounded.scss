@@ -1,0 +1,23 @@
+$rounded-size: 41px;
+
+.rounded {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    width: $rounded-size;
+    height: $rounded-size;
+    line-height: $rounded-size - 1px;
+    text-align: center;
+    @include border-radius(50%);
+    background: url($img-path+'icon_'+ $rounded-size +'.png') no-repeat;
+    @include respond-to(retina) {
+        background-image: url($img-path+'icon_'+ $rounded-size +'@2x.png');
+        @include background-size(auto 100%);
+    }
+}
+
+.rounded_facebook       { background-color: #3f5e9b; background-position: #{-($rounded-size*0)} #{-($rounded-size*0)};}
+.rounded_facebook:hover { background-color: #203662; }
+.rounded_github         { background-color: #585858; background-position: #{-($rounded-size*1)} #{-($rounded-size*0)};}
+.rounded_github:hover   { background-color: #323232; }
+//you can find twitter and youtube icons in original psd
