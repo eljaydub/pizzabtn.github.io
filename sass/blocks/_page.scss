@@ -2,11 +2,14 @@
 
 }
     .page__slide {
-        background: url($img-path+'slide__background.png') repeat-x center top;
+        @include background(linear-gradient(#fafafa, #fff));
+        @include background-size(100% 70px);
+        background-repeat: no-repeat;
     }
 
     .page__slide_pizza {
-        background: url($img-path+'slide__pizza.jpg') no-repeat center top;
+        background: url($img-path+'pizza.jpg') no-repeat center center;
+        @include background-size(cover);
     }
 
     .page__footer {
