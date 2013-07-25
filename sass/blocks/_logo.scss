@@ -1,4 +1,8 @@
 .logo {
     height: 150px;
     background: url($img-path+'logo.png') no-repeat center center;
+    @include respond-to(retina) {
+        background-image: url($img-path+'logo@2x.png');
+        @include background-size(100%);
+    }
 }

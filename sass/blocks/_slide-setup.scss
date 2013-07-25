@@ -15,6 +15,10 @@
         width: 367px;
         height: 223px;
         background: url($img-path+'line_top.png') no-repeat center center;
+        @include respond-to(retina) {
+            background-image: url($img-path+'line_top@2x.png');
+            @include background-size(100%);
+        }
     }
 
     .slide-setup__text {

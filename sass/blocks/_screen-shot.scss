@@ -5,6 +5,10 @@ $screen-shot-height: 246px;
     width: $screen-shot-width;
     height: $screen-shot-height;
     background: url($img-path+'screenshot.jpg') no-repeat;
+    @include respond-to(retina) {
+        background-image: url($img-path+'screenshot@2x.jpg');
+        @include background-size(auto 100%);
+    }
 }
 
 .screen-shot_setup-button { background-position: #{-($screen-shot-width*0)} #{-($screen-shot-height*0)}; }
