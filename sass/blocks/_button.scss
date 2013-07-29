@@ -29,7 +29,10 @@ $button-height: 60px;
     }
 }
 
-.button_disabled:hover {
-    background: #94bc4f;
-    @include background(linear-gradient(#d3e37d, #5a9723) );
+.button_disabled {
+    cursor: default;
+    &:hover {
+        background: #94bc4f;
+        @include background(linear-gradient(#d3e37d, #5a9723) );
+    }
 }
