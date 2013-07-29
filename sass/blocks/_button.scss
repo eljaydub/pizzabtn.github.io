@@ -10,7 +10,6 @@ $button-height: 60px;
     @include box-sizing(content-box);
 
     border: 1px solid #79885e;
-    background: #008ed2;
     @include border-radius( round($button-height/2) );
     background: #94bc4f;
     @include background(linear-gradient(#d3e37d, #5a9723) );
@@ -28,4 +27,9 @@ $button-height: 60px;
     &:hover {
         background: #94bc4f;
     }
+}
+
+.button_disabled:hover {
+    background: #94bc4f;
+    @include background(linear-gradient(#d3e37d, #5a9723) );
 }
