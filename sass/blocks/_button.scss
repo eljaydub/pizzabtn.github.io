@@ -1,6 +1,7 @@
 $button-height: 60px;
 
 .button {
+    position: relative;
     text-decoration: none;
     display: inline-block;
     vertical-align: middle;
@@ -36,3 +37,9 @@ $button-height: 60px;
         @include background(linear-gradient(#d3e37d, #5a9723) );
     }
 }
+    .button__sup {
+        position: absolute;
+        left: 50%;
+        margin: 0 0 0 58px;
+        bottom: 7px;
+    }
