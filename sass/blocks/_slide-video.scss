@@ -1,6 +1,6 @@
 .slide-video {
     position: relative;
-    height: 560px;
+    height: 940px;
 }
     .slide-video__title {
         position: absolute;
@@ -10,11 +10,18 @@
         text-align: center;
     }
 
-    .slide-video__video {
+    .slide-video__first-video {
         position: absolute;
         left: -2px;
         right: -2px;
         top: 63px;
+    }
+
+    .slide-video__second-video {
+        position: absolute;
+        left: -2px;
+        right: -2px;
+        top: 440px;
     }
 
     .slide-video__button {
